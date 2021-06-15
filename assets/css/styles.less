@@ -1,0 +1,35 @@
+@bg-green:rgb(44, 163, 44);
+@bg-green-light:rgb(153, 182, 153);
+@bg-green-dark:rgb(69, 114, 69);
+@color-title:rgb(44, 163, 44);
+
+.border-radius(@radius) {
+    border-top-right-radius: @radius;
+    border-top-left-radius: @radius;
+    border-bottom-right-radius: @radius;
+    border-bottom-left-radius: @radius;
+
+}
+
+.bg-header{
+    background-color: @bg-green;
+}
+
+.jumbotron{
+    background-color:@bg-green-light;
+    h1.display-4 {
+        font-size: 3.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+        color:@bg-green-dark;
+    }
+
+    a.btn-primary {
+        color: #fff;
+        background-color: @bg-green-dark;
+        border-color:@bg-green-light;
+        .border-radius(0px);
+
+    }
+
+}
